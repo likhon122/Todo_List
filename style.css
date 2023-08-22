@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #94d5b2;
+}
+.card{
+    background-color: #2C3F35;
+    height: 85vh;
+    width: 40%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 9px;
+    padding: 1rem;
+    box-shadow:3px 3px 15px 16px rgba(37, 36, 36, 0.1);
+    overflow: auto;
+}
+.title h1{
+    text-align: center;
+    font-size: 2.3rem;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 17px 0px 17px 0px;
+}
+.input-fild{
+    width: 80%;
+    padding: 8px 20px 8px 20px;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+.addTodoButton{
+    background-color:#007EC4;
+    width: 25%;
+    padding: 12px;
+    border-radius: 12px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    transition: .3s;
+    color: white;
+}
+.addTodoButton:hover{
+    background-color:#587f6a;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.listStyle{
+    width: 100%;
+    background-color:#587f6a ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 8px 4px 8px 0px;
+    border-radius: 10px;
+    transition: all ease-in-out .3s;
+}
+.listStyle:hover{
+    background-color: #229954 ;
+}
+.btn{
+    padding: 8px;
+    background-color: #E74C3C;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 8px;
+    transition: .3s;
+}
+.btn:hover{
+    transform: scale(1.1);
+    background-color: blue;
+}
+
+.success{
+    width: 100%;
+    background-color:#ddffdd;
+    border-left: 10px solid #04aa04;
+    padding: 10px;
+    margin: 8px 4px 8px 0px;
+    border-radius: 10px;
+    color: black;
+}
+.danger{
+    width: 100%;
+    background-color:#ffdddd;
+    border-left: 10px solid #f44336;
+    padding: 10px;
+    margin: 8px 4px 8px 0px;
+    border-radius: 10px;
+    color: black;
+}
+
+@media (max-width:1300px){
+    .card{
+        width: 50%;
+    }
+}
+@media (max-width:1000px){
+    .card{
+        width: 60%;
+    }
+}
+@media (max-width:800px){
+    .card{
+        width: 75%;
+        height: 90vh;
+    }
+    .input-fild{
+        width: 75%;
+        margin-left: 10px;
+    }
+}
+@media (max-width:700px){
+    .card{
+        width: 90%;
+        height: 100vh;
+    }
+}
+@media (max-width:570px){
+    .card{
+        width: 98%;
+    }
+    .input-fild{
+        width: 75%;
+        margin-left: 0px;
+    }
+    .addTodoButton{
+        width: 25%;
+        padding: 12px;
+        margin-left: 10px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+@media (max-width:400px){
+    .input-fild{
+        width: 70%;
+    }
+    .addTodoButton{
+        width: 28%;
+        font-size: 15px;
+    }
+}
+@media (max-width:372px){
+    .input-fild{
+        width: 65%;
+        font-size: 15px;
+    }
+    .addTodoButton{
+        width: 30%;
+        font-size: 10px;
+    }
+}
